@@ -2,15 +2,13 @@ package com.example.tabbing.ui.main;
 
 import android.content.Context;
 
-import androidx.annotation.Nullable;
-import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.tabbing.R;
-import com.example.tabbing.fragments.Fragment1;
-import com.example.tabbing.fragments.Fragment2;
+import com.example.tabbing.fragments.Page1;
+import com.example.tabbing.fragments.Page2;
+import com.example.tabbing.fragments.Page3;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
@@ -34,9 +32,11 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 //        return PlaceholderFragment.newInstance(position + 1);
         switch (position) {
             case 0:
-                return new Fragment1();
+                return new Page1();
             case 1:
-                return new Fragment2();
+                return new Page2();
+            case 2:
+                return new Page3();
             default:
                 return null;
 
@@ -56,6 +56,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 2;
+        return 3;
     }
 }
