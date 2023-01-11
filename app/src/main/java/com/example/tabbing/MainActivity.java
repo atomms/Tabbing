@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-//        ViewPager viewPager = binding.viewPager;
-        ViewPager viewPager = findViewById(R.id.view_pager);
+        ViewPager viewPager = binding.viewPager;
+//        ViewPager viewPager = findViewById(R.id.view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
-        TabLayout tabs = binding.tabs;
-        tabs.setupWithViewPager(viewPager);
+//        TabLayout tabs = binding.tabs;
+//        tabs.setupWithViewPager(viewPager);
 //        FloatingActionButton fab = binding.fab;
 //
 //        fab.setOnClickListener(new View.OnClickListener() {
